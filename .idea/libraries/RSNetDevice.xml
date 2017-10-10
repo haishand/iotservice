@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="RSNetDevice">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/RSNetDevice.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
