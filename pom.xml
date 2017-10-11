@@ -9,24 +9,33 @@
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
+        <!-- log4j -->
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
         </dependency>
-    </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <configuration>
-                    <encoding>utf-8</encoding>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+        <!-- mysql driver -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.42</version>
+        </dependency>
+
+        <!-- sqlserver driver -->
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>sqljdbc4</artifactId>
+        </dependency>
+
+        <!-- mybatis -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.4.5</version>
+        </dependency>
+    </dependencies>
 
 
 </project>
