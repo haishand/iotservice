@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="DeviceInfo">
+    <resultMap id="result" type="pojo.DeviceInfo">
+        <result property="id" column="device_id" />
+        <result property="status" column="status"/>
+        <result property="hum" column="hum"/>
+        <result property="tem" column="tem"/>
+    </resultMap>
+    <select id="selectAll" resultMap="result">
+        select * from device_info;
+    </select>
+    <insert id="addOne" parameterType="pojo.DeviceInfo">
+        insert into device_info(device_id, status, hum, tem) values(#{id}, #{status}, #{hum}, #{tem})
+    </insert>
+</mapper>
