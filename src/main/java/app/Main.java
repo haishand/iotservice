@@ -3,6 +3,7 @@ package app;
 import dao.DeviceInfoDao;
 import pojo.DeviceInfo;
 
+import javax.swing.*;
 import java.util.List;
 
 public class Main {
@@ -21,5 +22,17 @@ public class Main {
         info.setStatus("00000000");
 
         dao.addOne(info);
+
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                new AppFrame().display();
+                /*
+                AppFrame app = new AppFrame();
+                app.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                app.pack();
+                app.setVisible(true);
+                */
+            }
+        });
     }
 }

@@ -7,9 +7,10 @@ import java.awt.*;
 
 public class AppFrame extends JFrame {
 
+    private JScrollPane scrollPane;
     private JTextArea textArea;
     private JTextField txtPort;
-    private JPanel pane;
+    private JPanel container;
 
     private RSServer rsServer;
     private MyDataListener listener;
@@ -20,15 +21,24 @@ public class AppFrame extends JFrame {
 
     private void initialize() {
         textArea = new JTextArea();
-        txtPort = new JTextField();
+        txtPort = new JTextField("test");
+        scrollPane = new JScrollPane(textArea);
+        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        scrollPane.setPreferredSize(new Dimension(250, 250));
 
-        pane = new JPanel();
-
-        GridBagLayout gbl = new GridBagLayout();
-        pane.setLayout(gbl);
-
-        GridBagConstraints gbc = new GridBagConstraints();
+        Container container = this.getContentPane();
+        container.setLayout(new GridBagLayout());
+        GridBagConstraints c = new GridBagConstraints();
+        c.gridx = 0; c.gridy = 0;
+        container.add(txtPort, c);
+        c.gridy++;
+        container.add(scrollPane, c);
 
     }
 
+    public void display() {
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.pack();
+        this.setVisible(true);
+    }
 }
