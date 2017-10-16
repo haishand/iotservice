@@ -25,13 +25,7 @@ public class Main {
 
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                new AppFrame().display();
-                /*
-                AppFrame app = new AppFrame();
-                app.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                app.pack();
-                app.setVisible(true);
-                */
+                new AppFrame().run();
             }
         });
     }

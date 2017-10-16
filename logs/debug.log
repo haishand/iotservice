@@ -1,480 +1,294 @@
-2017-10-13 10:59:49  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-10-13 10:59:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:140 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 10:59:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:142 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 10:59:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:142 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 10:59:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:142 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 10:59:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:241 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 10:59:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:538 ] - [ DEBUG ]  Created connection 20025028.
-2017-10-13 10:59:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:538 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 10:59:49  [ DeviceInfo.selectAll:main:541 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
-2017-10-13 10:59:49  [ DeviceInfo.selectAll:main:576 ] - [ DEBUG ]  ==> Parameters: 
-2017-10-13 10:59:49  [ DeviceInfo.selectAll:main:592 ] - [ DEBUG ]  <==      Total: 2
-2017-10-13 10:59:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:593 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 10:59:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:594 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 10:59:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:594 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 10:59:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:594 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 10:59:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:594 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
-2017-10-13 10:59:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:596 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 10:59:49  [ DeviceInfo.addOne:main:597 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
-2017-10-13 10:59:49  [ DeviceInfo.addOne:main:598 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
-2017-10-13 10:59:49  [ DeviceInfo.addOne:main:599 ] - [ DEBUG ]  <==    Updates: 1
-2017-10-13 10:59:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:600 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 10:59:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:699 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 10:59:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:700 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 10:59:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:700 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 14:59:22  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-10-13 14:59:23  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:448 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 14:59:23  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:451 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 14:59:23  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:451 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 14:59:23  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:452 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 14:59:23  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:622 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 14:59:23  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:959 ] - [ DEBUG ]  Created connection 20025028.
-2017-10-13 14:59:23  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:959 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 14:59:23  [ DeviceInfo.selectAll:main:963 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
-2017-10-13 14:59:23  [ DeviceInfo.selectAll:main:995 ] - [ DEBUG ]  ==> Parameters: 
-2017-10-13 14:59:23  [ DeviceInfo.selectAll:main:1011 ] - [ DEBUG ]  <==      Total: 3
-2017-10-13 14:59:23  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:1011 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 14:59:23  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:1012 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 14:59:23  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:1012 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 14:59:23  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:1013 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 14:59:23  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:1013 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
-2017-10-13 14:59:23  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:1014 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 14:59:23  [ DeviceInfo.addOne:main:1015 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
-2017-10-13 14:59:23  [ DeviceInfo.addOne:main:1016 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
-2017-10-13 14:59:23  [ DeviceInfo.addOne:main:1017 ] - [ DEBUG ]  <==    Updates: 1
-2017-10-13 14:59:23  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:1017 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 14:59:23  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:1121 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 14:59:23  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:1122 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 14:59:23  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:1123 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 15:00:09  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-10-13 15:00:09  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:125 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:00:09  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:126 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:00:09  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:127 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:00:09  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:127 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:00:09  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:225 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 15:00:09  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:483 ] - [ DEBUG ]  Created connection 20025028.
-2017-10-13 15:00:09  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:484 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:00:09  [ DeviceInfo.selectAll:main:487 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
-2017-10-13 15:00:09  [ DeviceInfo.selectAll:main:518 ] - [ DEBUG ]  ==> Parameters: 
-2017-10-13 15:00:10  [ DeviceInfo.selectAll:main:536 ] - [ DEBUG ]  <==      Total: 4
-2017-10-13 15:00:10  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:536 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:00:10  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:537 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:00:10  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:537 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 15:00:10  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:538 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 15:00:10  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:538 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
-2017-10-13 15:00:10  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:539 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:00:10  [ DeviceInfo.addOne:main:540 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
-2017-10-13 15:00:10  [ DeviceInfo.addOne:main:541 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
-2017-10-13 15:00:10  [ DeviceInfo.addOne:main:542 ] - [ DEBUG ]  <==    Updates: 1
-2017-10-13 15:00:10  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:542 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:00:10  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:622 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:00:10  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:624 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:00:10  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:624 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 15:00:28  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-10-13 15:00:28  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:150 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:00:28  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:151 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:00:28  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:151 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:00:28  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:152 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:00:28  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:247 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 15:00:28  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:521 ] - [ DEBUG ]  Created connection 20025028.
-2017-10-13 15:00:28  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:522 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:00:28  [ DeviceInfo.selectAll:main:524 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
-2017-10-13 15:00:28  [ DeviceInfo.selectAll:main:556 ] - [ DEBUG ]  ==> Parameters: 
-2017-10-13 15:00:28  [ DeviceInfo.selectAll:main:574 ] - [ DEBUG ]  <==      Total: 5
-2017-10-13 15:00:28  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:575 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:00:28  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:576 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:00:28  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:576 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 15:00:28  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:577 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 15:00:28  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:577 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
-2017-10-13 15:00:28  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:578 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:00:28  [ DeviceInfo.addOne:main:579 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
-2017-10-13 15:00:28  [ DeviceInfo.addOne:main:580 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
-2017-10-13 15:00:28  [ DeviceInfo.addOne:main:581 ] - [ DEBUG ]  <==    Updates: 1
-2017-10-13 15:00:28  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:581 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:00:28  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:608 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:00:28  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:609 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:00:28  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:609 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 15:04:08  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-10-13 15:04:08  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:129 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:04:08  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:132 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:04:08  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:132 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:04:08  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:132 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:04:08  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:236 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 15:04:08  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:508 ] - [ DEBUG ]  Created connection 20025028.
-2017-10-13 15:04:08  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:509 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:04:08  [ DeviceInfo.selectAll:main:511 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
-2017-10-13 15:04:08  [ DeviceInfo.selectAll:main:549 ] - [ DEBUG ]  ==> Parameters: 
-2017-10-13 15:04:08  [ DeviceInfo.selectAll:main:569 ] - [ DEBUG ]  <==      Total: 6
-2017-10-13 15:04:08  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:570 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:04:08  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:570 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:04:08  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:571 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 15:04:08  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:571 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 15:04:08  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:571 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
-2017-10-13 15:04:08  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:573 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:04:08  [ DeviceInfo.addOne:main:574 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
-2017-10-13 15:04:08  [ DeviceInfo.addOne:main:575 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
-2017-10-13 15:04:08  [ DeviceInfo.addOne:main:576 ] - [ DEBUG ]  <==    Updates: 1
-2017-10-13 15:04:08  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:576 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:04:08  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:663 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:04:08  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:664 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:04:08  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:665 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 15:34:43  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-10-13 15:34:43  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:341 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:34:43  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:344 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:34:43  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:344 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:34:43  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:345 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:34:43  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:579 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 15:34:44  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:1156 ] - [ DEBUG ]  Created connection 20025028.
-2017-10-13 15:34:44  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:1157 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:34:44  [ DeviceInfo.selectAll:main:1160 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
-2017-10-13 15:34:44  [ DeviceInfo.selectAll:main:1230 ] - [ DEBUG ]  ==> Parameters: 
-2017-10-13 15:34:44  [ DeviceInfo.selectAll:main:1257 ] - [ DEBUG ]  <==      Total: 7
-2017-10-13 15:34:44  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:1258 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:34:44  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:1263 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:34:44  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:1264 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 15:34:44  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:1269 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 15:34:44  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:1271 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
-2017-10-13 15:34:44  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:1273 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:34:44  [ DeviceInfo.addOne:main:1276 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
-2017-10-13 15:34:44  [ DeviceInfo.addOne:main:1278 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
-2017-10-13 15:34:44  [ DeviceInfo.addOne:main:1280 ] - [ DEBUG ]  <==    Updates: 1
-2017-10-13 15:34:44  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:1280 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:34:44  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:1334 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:34:44  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:1335 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:34:44  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:1336 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 15:44:47  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-10-13 15:44:47  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:117 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:44:47  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:118 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:44:47  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:118 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:44:47  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:118 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:44:47  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:209 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 15:44:48  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:466 ] - [ DEBUG ]  Created connection 20025028.
-2017-10-13 15:44:48  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:466 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:44:48  [ DeviceInfo.selectAll:main:469 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
-2017-10-13 15:44:48  [ DeviceInfo.selectAll:main:500 ] - [ DEBUG ]  ==> Parameters: 
-2017-10-13 15:44:48  [ DeviceInfo.selectAll:main:515 ] - [ DEBUG ]  <==      Total: 8
-2017-10-13 15:44:48  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:516 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:44:48  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:517 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:44:48  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:517 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 15:44:48  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:518 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 15:44:48  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:518 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
-2017-10-13 15:44:48  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:519 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:44:48  [ DeviceInfo.addOne:main:520 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
-2017-10-13 15:44:48  [ DeviceInfo.addOne:main:521 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
-2017-10-13 15:44:48  [ DeviceInfo.addOne:main:522 ] - [ DEBUG ]  <==    Updates: 1
-2017-10-13 15:44:48  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:523 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:44:48  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:632 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:44:48  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:632 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:44:48  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:632 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 15:50:48  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-10-13 15:50:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:137 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:50:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:138 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:50:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:138 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:50:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:138 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:50:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:231 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 15:50:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:494 ] - [ DEBUG ]  Created connection 20025028.
-2017-10-13 15:50:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:495 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:50:49  [ DeviceInfo.selectAll:main:497 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
-2017-10-13 15:50:49  [ DeviceInfo.selectAll:main:532 ] - [ DEBUG ]  ==> Parameters: 
-2017-10-13 15:50:49  [ DeviceInfo.selectAll:main:548 ] - [ DEBUG ]  <==      Total: 9
-2017-10-13 15:50:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:549 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:50:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:550 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:50:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:550 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 15:50:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:551 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 15:50:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:551 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
-2017-10-13 15:50:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:551 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:50:49  [ DeviceInfo.addOne:main:552 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
-2017-10-13 15:50:49  [ DeviceInfo.addOne:main:553 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
-2017-10-13 15:50:49  [ DeviceInfo.addOne:main:554 ] - [ DEBUG ]  <==    Updates: 1
-2017-10-13 15:50:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:554 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:50:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:668 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:50:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:669 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:50:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:669 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 15:51:04  [ org.apache.ibatis.logging.LogFactory:main:1 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-10-13 15:51:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:110 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:51:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:111 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:51:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:111 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:51:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:111 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:51:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:198 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 15:51:05  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:438 ] - [ DEBUG ]  Created connection 20025028.
-2017-10-13 15:51:05  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:439 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:51:05  [ DeviceInfo.selectAll:main:442 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
-2017-10-13 15:51:05  [ DeviceInfo.selectAll:main:474 ] - [ DEBUG ]  ==> Parameters: 
-2017-10-13 15:51:05  [ DeviceInfo.selectAll:main:492 ] - [ DEBUG ]  <==      Total: 10
-2017-10-13 15:51:05  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:493 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:51:05  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:493 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:51:05  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:494 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 15:51:05  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:494 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 15:51:05  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:495 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
-2017-10-13 15:51:05  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:495 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:51:05  [ DeviceInfo.addOne:main:496 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
-2017-10-13 15:51:05  [ DeviceInfo.addOne:main:497 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
-2017-10-13 15:51:05  [ DeviceInfo.addOne:main:498 ] - [ DEBUG ]  <==    Updates: 1
-2017-10-13 15:51:05  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:498 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:51:05  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:585 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:51:05  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:586 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:51:05  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:586 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 15:56:20  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-10-13 15:56:20  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:127 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:56:20  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:128 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:56:20  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:128 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:56:20  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:128 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 15:56:20  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:223 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 15:56:20  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:488 ] - [ DEBUG ]  Created connection 20025028.
-2017-10-13 15:56:20  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:488 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:56:20  [ DeviceInfo.selectAll:main:492 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
-2017-10-13 15:56:21  [ DeviceInfo.selectAll:main:528 ] - [ DEBUG ]  ==> Parameters: 
-2017-10-13 15:56:21  [ DeviceInfo.selectAll:main:545 ] - [ DEBUG ]  <==      Total: 11
-2017-10-13 15:56:21  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:546 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:56:21  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:547 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:56:21  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:547 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 15:56:21  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:548 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 15:56:21  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:548 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
-2017-10-13 15:56:21  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:549 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:56:21  [ DeviceInfo.addOne:main:550 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
-2017-10-13 15:56:21  [ DeviceInfo.addOne:main:551 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
-2017-10-13 15:56:21  [ DeviceInfo.addOne:main:552 ] - [ DEBUG ]  <==    Updates: 1
-2017-10-13 15:56:21  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:552 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:56:21  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:621 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:56:21  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:623 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 15:56:21  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:623 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 16:05:36  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-10-13 16:05:36  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:121 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:05:36  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:122 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:05:36  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:123 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:05:36  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:123 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:05:36  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:233 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 16:05:36  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:477 ] - [ DEBUG ]  Created connection 20025028.
-2017-10-13 16:05:36  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:477 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:05:36  [ DeviceInfo.selectAll:main:480 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
-2017-10-13 16:05:36  [ DeviceInfo.selectAll:main:523 ] - [ DEBUG ]  ==> Parameters: 
-2017-10-13 16:05:36  [ DeviceInfo.selectAll:main:546 ] - [ DEBUG ]  <==      Total: 12
-2017-10-13 16:05:36  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:547 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:05:36  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:548 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:05:36  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:548 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 16:05:36  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:549 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 16:05:36  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:549 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
-2017-10-13 16:05:36  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:551 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:05:36  [ DeviceInfo.addOne:main:552 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
-2017-10-13 16:05:36  [ DeviceInfo.addOne:main:553 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
-2017-10-13 16:05:36  [ DeviceInfo.addOne:main:555 ] - [ DEBUG ]  <==    Updates: 1
-2017-10-13 16:05:36  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:555 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:05:36  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:640 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:05:36  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:641 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:05:36  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:641 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 16:05:53  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-10-13 16:05:53  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:121 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:05:53  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:123 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:05:53  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:123 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:05:53  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:124 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:05:53  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:218 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 16:05:53  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:464 ] - [ DEBUG ]  Created connection 20025028.
-2017-10-13 16:05:53  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:464 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:05:53  [ DeviceInfo.selectAll:main:466 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
-2017-10-13 16:05:53  [ DeviceInfo.selectAll:main:496 ] - [ DEBUG ]  ==> Parameters: 
-2017-10-13 16:05:53  [ DeviceInfo.selectAll:main:513 ] - [ DEBUG ]  <==      Total: 13
-2017-10-13 16:05:53  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:514 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:05:53  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:515 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:05:53  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:515 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 16:05:53  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:515 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 16:05:53  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:516 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
-2017-10-13 16:05:53  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:517 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:05:53  [ DeviceInfo.addOne:main:517 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
-2017-10-13 16:05:53  [ DeviceInfo.addOne:main:518 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
-2017-10-13 16:05:53  [ DeviceInfo.addOne:main:519 ] - [ DEBUG ]  <==    Updates: 1
-2017-10-13 16:05:53  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:519 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:05:54  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:599 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:05:54  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:600 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:05:54  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:600 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 16:09:28  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-10-13 16:09:29  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:115 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:09:29  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:117 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:09:29  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:117 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:09:29  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:117 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:09:29  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:202 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 16:09:29  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:438 ] - [ DEBUG ]  Created connection 20025028.
-2017-10-13 16:09:29  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:439 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:09:29  [ DeviceInfo.selectAll:main:442 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
-2017-10-13 16:09:29  [ DeviceInfo.selectAll:main:471 ] - [ DEBUG ]  ==> Parameters: 
-2017-10-13 16:09:29  [ DeviceInfo.selectAll:main:488 ] - [ DEBUG ]  <==      Total: 14
-2017-10-13 16:09:29  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:489 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:09:29  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:489 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:09:29  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:490 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 16:09:29  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:490 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 16:09:29  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:491 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
-2017-10-13 16:09:29  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:491 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:09:29  [ DeviceInfo.addOne:main:492 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
-2017-10-13 16:09:29  [ DeviceInfo.addOne:main:493 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
-2017-10-13 16:09:29  [ DeviceInfo.addOne:main:494 ] - [ DEBUG ]  <==    Updates: 1
-2017-10-13 16:09:29  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:494 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:09:29  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:622 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:09:29  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:623 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:09:29  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:623 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 16:10:25  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-10-13 16:10:25  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:115 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:10:25  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:116 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:10:25  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:117 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:10:25  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:117 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:10:25  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:203 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 16:10:25  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:432 ] - [ DEBUG ]  Created connection 20025028.
-2017-10-13 16:10:25  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:433 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:10:25  [ DeviceInfo.selectAll:main:435 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
-2017-10-13 16:10:25  [ DeviceInfo.selectAll:main:466 ] - [ DEBUG ]  ==> Parameters: 
-2017-10-13 16:10:25  [ DeviceInfo.selectAll:main:485 ] - [ DEBUG ]  <==      Total: 15
-2017-10-13 16:10:25  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:485 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:10:25  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:486 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:10:25  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:487 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 16:10:25  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:488 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 16:10:25  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:488 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
-2017-10-13 16:10:25  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:489 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:10:25  [ DeviceInfo.addOne:main:490 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
-2017-10-13 16:10:25  [ DeviceInfo.addOne:main:491 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
-2017-10-13 16:10:25  [ DeviceInfo.addOne:main:492 ] - [ DEBUG ]  <==    Updates: 1
-2017-10-13 16:10:25  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:492 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:10:25  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:572 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:10:25  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:573 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:10:25  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:573 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 16:11:57  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-10-13 16:11:57  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:113 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:11:57  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:114 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:11:57  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:114 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:11:57  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:115 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:11:57  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:202 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 16:11:58  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:438 ] - [ DEBUG ]  Created connection 20025028.
-2017-10-13 16:11:58  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:439 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:11:58  [ DeviceInfo.selectAll:main:441 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
-2017-10-13 16:11:58  [ DeviceInfo.selectAll:main:473 ] - [ DEBUG ]  ==> Parameters: 
-2017-10-13 16:11:58  [ DeviceInfo.selectAll:main:491 ] - [ DEBUG ]  <==      Total: 16
-2017-10-13 16:11:58  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:492 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:11:58  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:492 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:11:58  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:493 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 16:11:58  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:494 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 16:11:58  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:494 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
-2017-10-13 16:11:58  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:495 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:11:58  [ DeviceInfo.addOne:main:497 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
-2017-10-13 16:11:58  [ DeviceInfo.addOne:main:498 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
-2017-10-13 16:11:58  [ DeviceInfo.addOne:main:499 ] - [ DEBUG ]  <==    Updates: 1
-2017-10-13 16:11:58  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:500 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:11:58  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:555 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:11:58  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:556 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:11:58  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:556 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 16:12:31  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-10-13 16:12:31  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:117 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:12:31  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:119 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:12:31  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:119 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:12:31  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:119 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:12:31  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:205 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 16:12:31  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:451 ] - [ DEBUG ]  Created connection 20025028.
-2017-10-13 16:12:31  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:452 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:12:31  [ DeviceInfo.selectAll:main:454 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
-2017-10-13 16:12:31  [ DeviceInfo.selectAll:main:483 ] - [ DEBUG ]  ==> Parameters: 
-2017-10-13 16:12:31  [ DeviceInfo.selectAll:main:502 ] - [ DEBUG ]  <==      Total: 17
-2017-10-13 16:12:31  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:502 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:12:31  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:503 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:12:31  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:504 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 16:12:31  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:504 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 16:12:31  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:505 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
-2017-10-13 16:12:31  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:506 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:12:31  [ DeviceInfo.addOne:main:506 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
-2017-10-13 16:12:31  [ DeviceInfo.addOne:main:507 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
-2017-10-13 16:12:31  [ DeviceInfo.addOne:main:508 ] - [ DEBUG ]  <==    Updates: 1
-2017-10-13 16:12:31  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:509 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:12:31  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:614 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:12:31  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:614 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:12:31  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:615 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 16:18:18  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-10-13 16:18:18  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:115 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:18:18  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:117 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:18:18  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:117 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:18:18  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:118 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:18:18  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:202 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 16:18:18  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:431 ] - [ DEBUG ]  Created connection 20025028.
-2017-10-13 16:18:18  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:432 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:18:18  [ DeviceInfo.selectAll:main:435 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
-2017-10-13 16:18:18  [ DeviceInfo.selectAll:main:470 ] - [ DEBUG ]  ==> Parameters: 
-2017-10-13 16:18:19  [ DeviceInfo.selectAll:main:495 ] - [ DEBUG ]  <==      Total: 18
-2017-10-13 16:18:19  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:495 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:18:19  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:496 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:18:19  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:496 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 16:18:19  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:497 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 16:18:19  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:497 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
-2017-10-13 16:18:19  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:498 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:18:19  [ DeviceInfo.addOne:main:499 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
-2017-10-13 16:18:19  [ DeviceInfo.addOne:main:500 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
-2017-10-13 16:18:19  [ DeviceInfo.addOne:main:501 ] - [ DEBUG ]  <==    Updates: 1
-2017-10-13 16:18:19  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:501 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:18:19  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:575 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:18:19  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:576 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:18:19  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:576 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 16:50:19  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-10-13 16:50:19  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:126 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:50:19  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:127 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:50:19  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:127 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:50:19  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:128 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:50:19  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:223 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 16:50:20  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:486 ] - [ DEBUG ]  Created connection 20025028.
-2017-10-13 16:50:20  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:487 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:50:20  [ DeviceInfo.selectAll:main:490 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
-2017-10-13 16:50:20  [ DeviceInfo.selectAll:main:527 ] - [ DEBUG ]  ==> Parameters: 
-2017-10-13 16:50:20  [ DeviceInfo.selectAll:main:549 ] - [ DEBUG ]  <==      Total: 19
-2017-10-13 16:50:20  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:550 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:50:20  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:551 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:50:20  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:551 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 16:50:20  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:553 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 16:50:20  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:553 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
-2017-10-13 16:50:20  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:554 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:50:20  [ DeviceInfo.addOne:main:555 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
-2017-10-13 16:50:20  [ DeviceInfo.addOne:main:557 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
-2017-10-13 16:50:20  [ DeviceInfo.addOne:main:558 ] - [ DEBUG ]  <==    Updates: 1
-2017-10-13 16:50:20  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:558 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:50:20  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:642 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:50:20  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:643 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:50:20  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:643 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 16:55:14  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-10-13 16:55:15  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:124 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:55:15  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:125 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:55:15  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:125 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:55:15  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:126 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 16:55:15  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:231 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 16:55:15  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:485 ] - [ DEBUG ]  Created connection 20025028.
-2017-10-13 16:55:15  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:486 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:55:15  [ DeviceInfo.selectAll:main:489 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
-2017-10-13 16:55:15  [ DeviceInfo.selectAll:main:522 ] - [ DEBUG ]  ==> Parameters: 
-2017-10-13 16:55:15  [ DeviceInfo.selectAll:main:553 ] - [ DEBUG ]  <==      Total: 20
-2017-10-13 16:55:15  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:554 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:55:15  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:555 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:55:15  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:555 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 16:55:15  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:556 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 16:55:15  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:557 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
-2017-10-13 16:55:15  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:558 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:55:15  [ DeviceInfo.addOne:main:559 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
-2017-10-13 16:55:15  [ DeviceInfo.addOne:main:561 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
-2017-10-13 16:55:15  [ DeviceInfo.addOne:main:579 ] - [ DEBUG ]  <==    Updates: 1
-2017-10-13 16:55:15  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:579 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:55:15  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:631 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:55:15  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:631 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 16:55:15  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:632 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 17:00:46  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-10-13 17:00:46  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:116 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 17:00:46  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:118 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 17:00:46  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:118 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 17:00:46  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:118 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-10-13 17:00:47  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:210 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 17:00:47  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:455 ] - [ DEBUG ]  Created connection 20025028.
-2017-10-13 17:00:47  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:456 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 17:00:47  [ DeviceInfo.selectAll:main:458 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
-2017-10-13 17:00:47  [ DeviceInfo.selectAll:main:491 ] - [ DEBUG ]  ==> Parameters: 
-2017-10-13 17:00:47  [ DeviceInfo.selectAll:main:508 ] - [ DEBUG ]  <==      Total: 21
-2017-10-13 17:00:47  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:509 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 17:00:47  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:510 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 17:00:47  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:510 ] - [ DEBUG ]  Returned connection 20025028 to pool.
-2017-10-13 17:00:47  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:511 ] - [ DEBUG ]  Opening JDBC Connection
-2017-10-13 17:00:47  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:511 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
-2017-10-13 17:00:47  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:513 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 17:00:47  [ DeviceInfo.addOne:main:513 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
-2017-10-13 17:00:47  [ DeviceInfo.addOne:main:515 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
-2017-10-13 17:00:47  [ DeviceInfo.addOne:main:533 ] - [ DEBUG ]  <==    Updates: 1
-2017-10-13 17:00:47  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:534 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 17:00:47  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:626 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 17:00:47  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:626 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
-2017-10-13 17:00:47  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:626 ] - [ DEBUG ]  Returned connection 20025028 to pool.
+2017-10-16 10:31:13  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-10-16 10:31:13  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:359 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:31:13  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:375 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:31:13  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:375 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:31:13  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:375 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:31:14  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:594 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:31:43  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-10-16 10:31:44  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:125 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:31:44  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:125 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:31:44  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:125 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:31:44  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:125 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:31:44  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:219 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:31:44  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:640 ] - [ DEBUG ]  Created connection 20025028.
+2017-10-16 10:31:44  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:640 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:31:44  [ DeviceInfo.selectAll:main:640 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
+2017-10-16 10:31:44  [ DeviceInfo.selectAll:main:692 ] - [ DEBUG ]  ==> Parameters: 
+2017-10-16 10:31:44  [ DeviceInfo.selectAll:main:765 ] - [ DEBUG ]  <==      Total: 22
+2017-10-16 10:31:44  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:765 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:31:44  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:765 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:31:44  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:765 ] - [ DEBUG ]  Returned connection 20025028 to pool.
+2017-10-16 10:31:44  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:765 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:31:44  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:765 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
+2017-10-16 10:31:44  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:765 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:31:44  [ DeviceInfo.addOne:main:765 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
+2017-10-16 10:31:44  [ DeviceInfo.addOne:main:765 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
+2017-10-16 10:31:44  [ DeviceInfo.addOne:main:765 ] - [ DEBUG ]  <==    Updates: 1
+2017-10-16 10:31:44  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:765 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:31:44  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:812 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:31:44  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:812 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:31:44  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:812 ] - [ DEBUG ]  Returned connection 20025028 to pool.
+2017-10-16 10:37:16  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-10-16 10:37:16  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:141 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:37:16  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:141 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:37:16  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:141 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:37:16  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:141 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:37:16  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:250 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:37:16  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:516 ] - [ DEBUG ]  Created connection 20025028.
+2017-10-16 10:37:16  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:516 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:37:16  [ DeviceInfo.selectAll:main:516 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
+2017-10-16 10:37:16  [ DeviceInfo.selectAll:main:562 ] - [ DEBUG ]  ==> Parameters: 
+2017-10-16 10:37:16  [ DeviceInfo.selectAll:main:594 ] - [ DEBUG ]  <==      Total: 23
+2017-10-16 10:37:16  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:594 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:37:16  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:594 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:37:16  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:594 ] - [ DEBUG ]  Returned connection 20025028 to pool.
+2017-10-16 10:37:16  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:594 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:37:16  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:594 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
+2017-10-16 10:37:16  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:594 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:37:16  [ DeviceInfo.addOne:main:594 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
+2017-10-16 10:37:16  [ DeviceInfo.addOne:main:594 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
+2017-10-16 10:37:17  [ DeviceInfo.addOne:main:1278 ] - [ DEBUG ]  <==    Updates: 1
+2017-10-16 10:37:17  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:1278 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:37:17  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:1375 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:37:17  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:1375 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:37:17  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:1375 ] - [ DEBUG ]  Returned connection 20025028 to pool.
+2017-10-16 10:39:18  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-10-16 10:39:18  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:141 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:39:18  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:141 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:39:18  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:141 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:39:18  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:141 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:39:19  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:250 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:39:19  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:532 ] - [ DEBUG ]  Created connection 20025028.
+2017-10-16 10:39:19  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:532 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:39:19  [ DeviceInfo.selectAll:main:532 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
+2017-10-16 10:39:19  [ DeviceInfo.selectAll:main:579 ] - [ DEBUG ]  ==> Parameters: 
+2017-10-16 10:39:19  [ DeviceInfo.selectAll:main:594 ] - [ DEBUG ]  <==      Total: 24
+2017-10-16 10:39:19  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:594 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:39:19  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:594 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:39:19  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:594 ] - [ DEBUG ]  Returned connection 20025028 to pool.
+2017-10-16 10:39:19  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:594 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:39:19  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:594 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
+2017-10-16 10:39:19  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:610 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:39:19  [ DeviceInfo.addOne:main:610 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
+2017-10-16 10:39:19  [ DeviceInfo.addOne:main:610 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
+2017-10-16 10:39:19  [ DeviceInfo.addOne:main:625 ] - [ DEBUG ]  <==    Updates: 1
+2017-10-16 10:39:19  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:625 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:39:19  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:657 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:39:19  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:657 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:39:19  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:657 ] - [ DEBUG ]  Returned connection 20025028 to pool.
+2017-10-16 10:41:16  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-10-16 10:41:16  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:125 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:41:16  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:125 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:41:16  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:125 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:41:16  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:125 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:41:16  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:204 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:41:16  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:454 ] - [ DEBUG ]  Created connection 20025028.
+2017-10-16 10:41:16  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:454 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:41:16  [ DeviceInfo.selectAll:main:454 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
+2017-10-16 10:41:16  [ DeviceInfo.selectAll:main:485 ] - [ DEBUG ]  ==> Parameters: 
+2017-10-16 10:41:16  [ DeviceInfo.selectAll:main:500 ] - [ DEBUG ]  <==      Total: 25
+2017-10-16 10:41:16  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:500 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:41:16  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:500 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:41:16  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:500 ] - [ DEBUG ]  Returned connection 20025028 to pool.
+2017-10-16 10:41:16  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:500 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:41:16  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:500 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
+2017-10-16 10:41:16  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:500 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:41:16  [ DeviceInfo.addOne:main:500 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
+2017-10-16 10:41:16  [ DeviceInfo.addOne:main:516 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
+2017-10-16 10:41:16  [ DeviceInfo.addOne:main:532 ] - [ DEBUG ]  <==    Updates: 1
+2017-10-16 10:41:16  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:532 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:41:16  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:766 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:41:16  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:766 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:41:16  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:766 ] - [ DEBUG ]  Returned connection 20025028 to pool.
+2017-10-16 10:41:33  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-10-16 10:41:33  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:125 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:41:33  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:125 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:41:33  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:125 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:41:33  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:125 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:41:33  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:250 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:41:33  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:469 ] - [ DEBUG ]  Created connection 20025028.
+2017-10-16 10:41:33  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:469 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:41:33  [ DeviceInfo.selectAll:main:485 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
+2017-10-16 10:41:33  [ DeviceInfo.selectAll:main:516 ] - [ DEBUG ]  ==> Parameters: 
+2017-10-16 10:41:33  [ DeviceInfo.selectAll:main:532 ] - [ DEBUG ]  <==      Total: 26
+2017-10-16 10:41:33  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:532 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:41:33  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:532 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:41:33  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:532 ] - [ DEBUG ]  Returned connection 20025028 to pool.
+2017-10-16 10:41:33  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:532 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:41:33  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:532 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
+2017-10-16 10:41:33  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:532 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:41:33  [ DeviceInfo.addOne:main:532 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
+2017-10-16 10:41:33  [ DeviceInfo.addOne:main:532 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
+2017-10-16 10:41:33  [ DeviceInfo.addOne:main:547 ] - [ DEBUG ]  <==    Updates: 1
+2017-10-16 10:41:33  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:563 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:41:33  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:704 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:41:33  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:704 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:41:33  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:704 ] - [ DEBUG ]  Returned connection 20025028 to pool.
+2017-10-16 10:55:56  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-10-16 10:55:56  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:121 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:55:56  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:122 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:55:56  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:122 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:55:56  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:122 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:55:57  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:210 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:55:57  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:446 ] - [ DEBUG ]  Created connection 20025028.
+2017-10-16 10:55:57  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:446 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:55:57  [ DeviceInfo.selectAll:main:449 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
+2017-10-16 10:55:57  [ DeviceInfo.selectAll:main:479 ] - [ DEBUG ]  ==> Parameters: 
+2017-10-16 10:55:57  [ DeviceInfo.selectAll:main:499 ] - [ DEBUG ]  <==      Total: 27
+2017-10-16 10:55:57  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:500 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:55:57  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:501 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:55:57  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:501 ] - [ DEBUG ]  Returned connection 20025028 to pool.
+2017-10-16 10:55:57  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:502 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:55:57  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:502 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
+2017-10-16 10:55:57  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:504 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:55:57  [ DeviceInfo.addOne:main:504 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
+2017-10-16 10:55:57  [ DeviceInfo.addOne:main:506 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
+2017-10-16 10:55:57  [ DeviceInfo.addOne:main:524 ] - [ DEBUG ]  <==    Updates: 1
+2017-10-16 10:55:57  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:524 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:55:57  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:582 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:55:57  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:583 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:55:57  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:583 ] - [ DEBUG ]  Returned connection 20025028 to pool.
+2017-10-16 10:56:07  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-10-16 10:56:07  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:109 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:56:07  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:110 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:56:07  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:110 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:56:07  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:110 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:56:07  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:206 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:56:08  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:446 ] - [ DEBUG ]  Created connection 20025028.
+2017-10-16 10:56:08  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:446 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:56:08  [ DeviceInfo.selectAll:main:449 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
+2017-10-16 10:56:08  [ DeviceInfo.selectAll:main:489 ] - [ DEBUG ]  ==> Parameters: 
+2017-10-16 10:56:08  [ DeviceInfo.selectAll:main:511 ] - [ DEBUG ]  <==      Total: 28
+2017-10-16 10:56:08  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:511 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:56:08  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:512 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:56:08  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:512 ] - [ DEBUG ]  Returned connection 20025028 to pool.
+2017-10-16 10:56:08  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:513 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:56:08  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:513 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
+2017-10-16 10:56:08  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:514 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:56:08  [ DeviceInfo.addOne:main:515 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
+2017-10-16 10:56:08  [ DeviceInfo.addOne:main:516 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
+2017-10-16 10:56:08  [ DeviceInfo.addOne:main:538 ] - [ DEBUG ]  <==    Updates: 1
+2017-10-16 10:56:08  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:538 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:56:08  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:729 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:56:08  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:730 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:56:08  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:731 ] - [ DEBUG ]  Returned connection 20025028 to pool.
+2017-10-16 10:56:22  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-10-16 10:56:22  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:115 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:56:22  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:116 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:56:22  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:116 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:56:22  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:116 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:56:23  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:205 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:56:23  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:448 ] - [ DEBUG ]  Created connection 20025028.
+2017-10-16 10:56:23  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:449 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:56:23  [ DeviceInfo.selectAll:main:452 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
+2017-10-16 10:56:23  [ DeviceInfo.selectAll:main:480 ] - [ DEBUG ]  ==> Parameters: 
+2017-10-16 10:56:23  [ DeviceInfo.selectAll:main:498 ] - [ DEBUG ]  <==      Total: 29
+2017-10-16 10:56:23  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:499 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:56:23  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:500 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:56:23  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:500 ] - [ DEBUG ]  Returned connection 20025028 to pool.
+2017-10-16 10:56:23  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:501 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:56:23  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:501 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
+2017-10-16 10:56:23  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:503 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:56:23  [ DeviceInfo.addOne:main:505 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
+2017-10-16 10:56:23  [ DeviceInfo.addOne:main:506 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
+2017-10-16 10:56:23  [ DeviceInfo.addOne:main:528 ] - [ DEBUG ]  <==    Updates: 1
+2017-10-16 10:56:23  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:528 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:56:23  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:579 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:56:23  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:580 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:56:23  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:580 ] - [ DEBUG ]  Returned connection 20025028 to pool.
+2017-10-16 10:56:37  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-10-16 10:56:37  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:111 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:56:37  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:112 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:56:37  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:112 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:56:37  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:112 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:56:37  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:203 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:56:38  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:464 ] - [ DEBUG ]  Created connection 20025028.
+2017-10-16 10:56:38  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:464 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:56:38  [ DeviceInfo.selectAll:main:467 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
+2017-10-16 10:56:38  [ DeviceInfo.selectAll:main:501 ] - [ DEBUG ]  ==> Parameters: 
+2017-10-16 10:56:38  [ DeviceInfo.selectAll:main:524 ] - [ DEBUG ]  <==      Total: 30
+2017-10-16 10:56:38  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:525 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:56:38  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:525 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:56:38  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:526 ] - [ DEBUG ]  Returned connection 20025028 to pool.
+2017-10-16 10:56:38  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:527 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:56:38  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:528 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
+2017-10-16 10:56:38  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:529 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:56:38  [ DeviceInfo.addOne:main:531 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
+2017-10-16 10:56:38  [ DeviceInfo.addOne:main:533 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
+2017-10-16 10:56:38  [ DeviceInfo.addOne:main:553 ] - [ DEBUG ]  <==    Updates: 1
+2017-10-16 10:56:38  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:553 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:56:38  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:594 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:56:38  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:595 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:56:38  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:595 ] - [ DEBUG ]  Returned connection 20025028 to pool.
+2017-10-16 10:57:39  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-10-16 10:57:39  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:113 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:57:39  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:114 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:57:39  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:114 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:57:39  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:114 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:57:39  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:210 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:57:39  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:459 ] - [ DEBUG ]  Created connection 20025028.
+2017-10-16 10:57:39  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:459 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:57:39  [ DeviceInfo.selectAll:main:462 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
+2017-10-16 10:57:39  [ DeviceInfo.selectAll:main:494 ] - [ DEBUG ]  ==> Parameters: 
+2017-10-16 10:57:39  [ DeviceInfo.selectAll:main:514 ] - [ DEBUG ]  <==      Total: 31
+2017-10-16 10:57:39  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:515 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:57:39  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:516 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:57:39  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:516 ] - [ DEBUG ]  Returned connection 20025028 to pool.
+2017-10-16 10:57:39  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:517 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:57:39  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:517 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
+2017-10-16 10:57:39  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:518 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:57:39  [ DeviceInfo.addOne:main:519 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
+2017-10-16 10:57:39  [ DeviceInfo.addOne:main:520 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
+2017-10-16 10:57:40  [ DeviceInfo.addOne:main:626 ] - [ DEBUG ]  <==    Updates: 1
+2017-10-16 10:57:40  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:626 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:57:40  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:676 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:57:40  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:678 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:57:40  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:678 ] - [ DEBUG ]  Returned connection 20025028 to pool.
+2017-10-16 10:57:49  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-10-16 10:57:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:126 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:57:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:127 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:57:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:127 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:57:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:128 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:57:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:231 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:57:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:503 ] - [ DEBUG ]  Created connection 20025028.
+2017-10-16 10:57:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:504 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:57:49  [ DeviceInfo.selectAll:main:506 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
+2017-10-16 10:57:49  [ DeviceInfo.selectAll:main:538 ] - [ DEBUG ]  ==> Parameters: 
+2017-10-16 10:57:49  [ DeviceInfo.selectAll:main:563 ] - [ DEBUG ]  <==      Total: 32
+2017-10-16 10:57:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:564 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:57:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:565 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:57:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:565 ] - [ DEBUG ]  Returned connection 20025028 to pool.
+2017-10-16 10:57:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:567 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:57:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:567 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
+2017-10-16 10:57:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:568 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:57:49  [ DeviceInfo.addOne:main:569 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
+2017-10-16 10:57:49  [ DeviceInfo.addOne:main:570 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
+2017-10-16 10:57:49  [ DeviceInfo.addOne:main:585 ] - [ DEBUG ]  <==    Updates: 1
+2017-10-16 10:57:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:585 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:57:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:634 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:57:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:635 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:57:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:635 ] - [ DEBUG ]  Returned connection 20025028 to pool.
+2017-10-16 10:58:17  [ org.apache.ibatis.logging.LogFactory:main:1 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-10-16 10:58:17  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:109 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:58:17  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:111 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:58:17  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:111 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:58:17  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:111 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-16 10:58:17  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:192 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:58:17  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:441 ] - [ DEBUG ]  Created connection 20025028.
+2017-10-16 10:58:17  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:441 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:58:17  [ DeviceInfo.selectAll:main:444 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
+2017-10-16 10:58:17  [ DeviceInfo.selectAll:main:480 ] - [ DEBUG ]  ==> Parameters: 
+2017-10-16 10:58:17  [ DeviceInfo.selectAll:main:500 ] - [ DEBUG ]  <==      Total: 33
+2017-10-16 10:58:17  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:501 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:58:17  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:501 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:58:17  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:502 ] - [ DEBUG ]  Returned connection 20025028 to pool.
+2017-10-16 10:58:17  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:503 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-16 10:58:17  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:504 ] - [ DEBUG ]  Checked out connection 20025028 from pool.
+2017-10-16 10:58:17  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:505 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:58:17  [ DeviceInfo.addOne:main:505 ] - [ DEBUG ]  ==>  Preparing: insert into device_info(device_id, status, hum, tem) values(?, ?, ?, ?) 
+2017-10-16 10:58:17  [ DeviceInfo.addOne:main:507 ] - [ DEBUG ]  ==> Parameters: 43543543(Integer), 00000000(String), 10.1(Float), 20.2(Float)
+2017-10-16 10:58:17  [ DeviceInfo.addOne:main:566 ] - [ DEBUG ]  <==    Updates: 1
+2017-10-16 10:58:17  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:567 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:58:17  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:902 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:58:17  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:902 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1318ec4]
+2017-10-16 10:58:17  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:903 ] - [ DEBUG ]  Returned connection 20025028 to pool.

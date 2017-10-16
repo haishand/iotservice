@@ -1,6 +1,6 @@
 package app;
 
-import buf.DBPool;
+import buf.DBRecordPool;
 import buf.MyDBRecord;
 import com.jnrsmcu.sdk.netdevice.*;
 
@@ -14,9 +14,9 @@ public class MyDataListener implements IDataListener {
             float hum = nd.getHum();
             String status = realTimeData.getRelayStatus();
 
-            // skip empty 2 device record
+            // skip 2 empty device record
             if(tem < EPS || hum < EPS) continue;
-            DBPool.q.offer(new MyDBRecord(id, tem, hum, status));
+            DBRecordPool.q.offer(new MyDBRecord(id, tem, hum, status));
 
         }
 
