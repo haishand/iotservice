@@ -1,8 +1,10 @@
 package app;
 
-import buf.DBRecordPool;
-import buf.MyDBRecord;
+import buf.DBPool;
 import com.jnrsmcu.sdk.netdevice.*;
+import pojo.DeviceInfo;
+
+import java.util.Date;
 
 public class MyDataListener implements IDataListener {
     private static float EPS = 0.001f;
@@ -12,11 +14,12 @@ public class MyDataListener implements IDataListener {
             int id = realTimeData.getDeviceId();
             float tem = nd.getTem();
             float hum = nd.getHum();
+            Date time = nd.getRecordTime();
             String status = realTimeData.getRelayStatus();
 
             // skip 2 empty device record
             if(tem < EPS || hum < EPS) continue;
-            DBRecordPool.q.offer(new MyDBRecord(id, tem, hum, status));
+            DBPool.instance().getQ().offer(new DeviceInfo(id, status, tem, hum, time));
 
         }
 

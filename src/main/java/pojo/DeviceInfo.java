@@ -8,6 +8,18 @@ public class DeviceInfo {
     private float hum, tem;
     private Date time;
 
+    public DeviceInfo() {
+
+    }
+
+    public DeviceInfo(int id, String status, float hum, float tem, Date time) {
+        this.id = id;
+        this.status = status;
+        this.hum = hum;
+        this.tem = tem;
+        this.time = time;
+    }
+
     public int getId() {
         return id;
     }
