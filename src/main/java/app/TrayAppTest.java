@@ -3,6 +3,8 @@ package app;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.IOException;
 
 public class TrayAppTest extends JFrame {
@@ -30,6 +32,13 @@ public class TrayAppTest extends JFrame {
         PopupMenu popup = new PopupMenu();
 
         MenuItem aboutItem = new MenuItem("About");
+        aboutItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(null, "About");
+
+            }
+        });
         popup.add(aboutItem);
 
 

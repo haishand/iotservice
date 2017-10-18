@@ -1,12 +1,12 @@
 package dao;
 
-import app.MyBatisTest;
+import util.MyBatisUtils;
 import buf.DBPool;
 import pojo.DeviceInfo;
 
-public class DBWorker implements Runnable{
+public class DBWorker extends Thread{
     private boolean isRunning = true;
-    private DeviceInfoDao dao = new DeviceInfoDao(MyBatisTest.getSqlSessionFactory());  ;
+    private DeviceInfoDao dao = new DeviceInfoDao(MyBatisUtils.getSqlSessionFactory());  ;
 
     public DBWorker() {
     }

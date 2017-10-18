@@ -9,6 +9,7 @@ import java.util.Date;
 public class MyDataListener implements IDataListener {
     private static float EPS = 0.001f;
 
+    @Override
     public void receiveRealtimeData(RealTimeData realTimeData) {
         for(NodeData nd : realTimeData.getNodeList()) {
             int id = realTimeData.getDeviceId();
@@ -17,6 +18,7 @@ public class MyDataListener implements IDataListener {
             Date time = nd.getRecordTime();
             String status = realTimeData.getRelayStatus();
 
+System.out.println(id + ":" + tem + ":" + hum + ":" + status);
             // skip 2 empty device record
             if(tem < EPS || hum < EPS) continue;
             DBPool.instance().getQ().offer(new DeviceInfo(id, status, tem, hum, time));

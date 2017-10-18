@@ -1,4 +1,4 @@
-package app;
+package util;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.*;
@@ -6,7 +6,7 @@ import org.apache.ibatis.session.*;
 import java.io.IOException;
 import java.io.Reader;
 
-public class MyBatisTest {
+public class MyBatisUtils {
     private static SqlSessionFactory sqlSessionFactory;
 
     static {

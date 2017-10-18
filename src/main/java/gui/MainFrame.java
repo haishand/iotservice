@@ -1,17 +1,21 @@
-package app;
+package gui;
 
+import app.MyDataListener;
+import buf.DBPool;
 import com.jnrsmcu.sdk.netdevice.*;
 import org.apache.log4j.Logger;
+import pojo.DeviceInfo;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
+import java.util.Date;
 
-public class AppFrame extends JFrame {
+public class MainFrame extends JFrame {
 
-    public static Logger logger = Logger.getLogger(AppFrame.class);
+    public static Logger logger = Logger.getLogger(MainFrame.class);
 
     private JScrollPane scrollPane;
     private JTextArea textArea;
@@ -23,9 +27,48 @@ public class AppFrame extends JFrame {
     private JPanel container;
 
     private RSServer rsServer;
-    private MyDataListener listener;
+//    private MyDataListener listener;
+    private IDataListener listener = new IDataListener() {
+        private final float EPS = 0.001f;
+        @Override
+        public void receiveRealtimeData(RealTimeData realTimeData) {
+            for(NodeData nd : realTimeData.getNodeList()) {
+                int id = realTimeData.getDeviceId();
+                float tem = nd.getTem();
+                float hum = nd.getHum();
+                Date time = nd.getRecordTime();
+                String status = realTimeData.getRelayStatus();
 
-    public AppFrame() {
+                // skip 2 empty device record
+                if(tem < EPS || hum < EPS) continue;
+                System.out.println(id + ":" + tem + ":" + hum + ":" + status);
+                DBPool.instance().getQ().offer(new DeviceInfo(id, status, tem, hum, time));
+
+            }
+        }
+
+        @Override
+        public void receiveLoginData(LoginData loginData) {
+
+        }
+
+        @Override
+        public void receiveStoreData(StoreData storeData) {
+
+        }
+
+        @Override
+        public void receiveTelecontrolAck(TelecontrolAck telecontrolAck) {
+
+        }
+
+        @Override
+        public void receiveTimmingAck(TimmingAck timmingAck) {
+
+        }
+    };
+
+    public MainFrame() {
         initUI();
     }
 
@@ -34,8 +77,10 @@ public class AppFrame extends JFrame {
         lblPort = new JLabel("服务器端口：");
         txtPort = new JTextField("2404");
         btnStart = new JButton("启动");
+//        final boolean toggle = true;
         btnStart.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
+System.out.println("start rsServer.");
                 rsServer = RSServer.Initiate(Integer.parseInt(txtPort.getText()));
                 rsServer.addDataListener(listener);
                 try {
@@ -80,8 +125,8 @@ public class AppFrame extends JFrame {
         c.gridx++;
         container.add(btnSetting, c);
 
-        c.gridwidth = 5; c.gridx = 0; c.gridy++;
-        container.add(scrollPane, c);
+//        c.gridwidth = 5; c.gridx = 0; c.gridy++;
+//        container.add(scrollPane, c);
 
     }
 

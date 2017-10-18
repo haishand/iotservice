@@ -1,14 +1,17 @@
 package app;
 
+import dao.DBWorker;
 import dao.DeviceInfoDao;
+import gui.MainFrame;
 import pojo.DeviceInfo;
+import util.MyBatisUtils;
 
 import javax.swing.*;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-/*        DeviceInfoDao dao = new DeviceInfoDao(MyBatisTest.getSqlSessionFactory());
+        DeviceInfoDao dao = new DeviceInfoDao(MyBatisUtils.getSqlSessionFactory());
         List<DeviceInfo> list = dao.selectAll();
         for(DeviceInfo info : list) {
             System.out.println(info.getId());
@@ -21,11 +24,12 @@ public class Main {
         info.setId(43543543);
         info.setStatus("00000000");
 
-        dao.addOne(info);*/
+        dao.addOne(info);
 
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                new AppFrame().run();
+                new MainFrame().run();
+                new DBWorker().start();
             }
         });
     }
