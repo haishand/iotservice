@@ -52,3 +52,19 @@
 2017-10-19 09:40:56  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:940 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1213b92]
 2017-10-19 09:40:56  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:940 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1213b92]
 2017-10-19 09:40:56  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:940 ] - [ DEBUG ]  Returned connection 18955154 to pool.
+2017-10-19 10:11:38  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-10-19 10:11:38  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:129 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-19 10:11:38  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:130 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-19 10:11:38  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:130 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-19 10:11:38  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:130 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-10-19 10:11:38  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:216 ] - [ DEBUG ]  Opening JDBC Connection
+2017-10-19 10:11:39  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:464 ] - [ DEBUG ]  Created connection 18955154.
+2017-10-19 10:11:39  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:464 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1213b92]
+2017-10-19 10:11:39  [ DeviceInfo.selectAll:main:466 ] - [ DEBUG ]  ==>  Preparing: select * from device_info; 
+2017-10-19 10:11:39  [ DeviceInfo.selectAll:main:493 ] - [ DEBUG ]  ==> Parameters: 
+2017-10-19 10:11:39  [ DeviceInfo.selectAll:main:514 ] - [ DEBUG ]  <==      Total: 58
+2017-10-19 10:11:39  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:514 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1213b92]
+2017-10-19 10:11:39  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:515 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1213b92]
+2017-10-19 10:11:39  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:515 ] - [ DEBUG ]  Returned connection 18955154 to pool.
+2017-10-19 10:11:41  [ gui.MainFrame:AWT-EventQueue-0:2670 ] - [ INFO ]  rsServer started.
+2017-10-19 10:12:06  [ gui.MainFrame:AWT-EventQueue-0:27821 ] - [ INFO ]  rsServer stopped.

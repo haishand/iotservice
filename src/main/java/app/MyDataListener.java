@@ -2,11 +2,14 @@ package app;
 
 import buf.DBPool;
 import com.jnrsmcu.sdk.netdevice.*;
+import gui.MainFrame;
+import org.apache.log4j.Logger;
 import pojo.DeviceInfo;
 
 import java.util.Date;
 
 public class MyDataListener implements IDataListener {
+    private static Logger logger = Logger.getLogger(MyDataListener.class);
     private static float EPS = 0.001f;
 
     @Override
@@ -18,11 +21,15 @@ public class MyDataListener implements IDataListener {
             Date time = nd.getRecordTime();
             String status = realTimeData.getRelayStatus();
 
-//System.out.println(id + ":" + tem + ":" + hum + ":" + status);
             // skip 2 empty device record
             if (tem < EPS || hum < EPS) {
                 continue;
             }
+
+            logger.info("device id:" + id + "," +
+                    "temperature:" + tem + "," +
+                    "humidity:" + hum + "," +
+                    "status:" + status);
             DBPool.instance().getQ().offer(new DeviceInfo(id, status, tem, hum, time));
 
         }

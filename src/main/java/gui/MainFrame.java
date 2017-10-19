@@ -15,7 +15,7 @@ import java.util.Date;
 
 public class MainFrame extends JFrame {
 
-    public static Logger logger = Logger.getLogger(MainFrame.class);
+    private static Logger logger = Logger.getLogger(MainFrame.class);
 
     private JScrollPane scrollPane;
     private JTextArea textArea;
@@ -27,7 +27,7 @@ public class MainFrame extends JFrame {
     private JPanel container;
 
     private RSServer rsServer;
-//    private MyDataListener listener;
+    private MyDataListener myListener;
     private IDataListener listener = new IDataListener() {
         private final float EPS = 0.001f;
         @Override
@@ -90,7 +90,7 @@ public class MainFrame extends JFrame {
             @Override
             public void actionPerformed(ActionEvent arg0) {
                 rsServer = RSServer.Initiate(Integer.parseInt(txtPort.getText()));
-                rsServer.addDataListener(listener);
+                rsServer.addDataListener(myListener);
                 try {
                     rsServer.start();
                     logger.info("rsServer started.");
@@ -107,6 +107,7 @@ public class MainFrame extends JFrame {
         });
 
         btnStop.addActionListener(new ActionListener() {
+            @Override
             public void actionPerformed(ActionEvent arg0) {
                 try {
                     rsServer.stop();
@@ -145,7 +146,7 @@ public class MainFrame extends JFrame {
     }
 
     public void run() {
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.pack();
         this.setVisible(true);
     }

@@ -1,12 +1,13 @@
-package dao;
+package app;
 
+import dao.DeviceInfoDao;
 import util.MyBatisUtils;
 import buf.DBPool;
 import pojo.DeviceInfo;
 
 public class DBWorker extends Thread{
     private boolean isRunning = true;
-    private DeviceInfoDao dao = new DeviceInfoDao(MyBatisUtils.getSqlSessionFactory());  ;
+    private DeviceInfoDao dao = new DeviceInfoDao(MyBatisUtils.getSqlSessionFactory());
 
     public DBWorker() {
     }
@@ -15,8 +16,9 @@ public class DBWorker extends Thread{
     public void run() {
         while(isRunning) {
             DeviceInfo record = DBPool.instance().getQ().poll();
-            if(record != null)
+            if(record != null) {
                 dao.addOne(record);
+            }
         }
     }
 }

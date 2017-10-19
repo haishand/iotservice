@@ -1,6 +1,5 @@
 package app;
 
-import dao.DBWorker;
 import dao.DeviceInfoDao;
 import gui.MainFrame;
 import pojo.DeviceInfo;
