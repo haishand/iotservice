@@ -8,18 +8,24 @@ import java.awt.event.ActionListener;
 import java.io.IOException;
 
 public class TrayAppTest extends JFrame {
-    TrayIcon trayIcon;
-
     public TrayAppTest() {
+        initUI();
+    }
+
+    private void initUI() {
+        TrayIcon trayIcon = null;
         try {
             System.out.println(getClass().getClassLoader().getResource(""));
             trayIcon = new TrayIcon(ImageIO.read(ClassLoader.getSystemResource("images/bulb.gif")));
+
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
     public static void main(String[] args) {
+        TrayAppTest app = new TrayAppTest();
+
         TrayIcon trayIcon = null;
         try {
 //            System.out.println(getClass().getClassLoader().getResource(""));

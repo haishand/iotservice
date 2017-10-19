@@ -40,8 +40,13 @@ public class MainFrame extends JFrame {
                 String status = realTimeData.getRelayStatus();
 
                 // skip 2 empty device record
-                if(tem < EPS || hum < EPS) continue;
-                System.out.println(id + ":" + tem + ":" + hum + ":" + status);
+                if(tem < EPS || hum < EPS) {
+                    continue;
+                }
+                logger.info("device id:" + id + "," +
+                        "temperature:" + tem + "," +
+                        "humidity:" + hum + "," +
+                        "status:" + status);
                 DBPool.instance().getQ().offer(new DeviceInfo(id, status, tem, hum, time));
 
             }
@@ -77,14 +82,20 @@ public class MainFrame extends JFrame {
         lblPort = new JLabel("服务器端口：");
         txtPort = new JTextField("2404");
         btnStart = new JButton("启动");
-//        final boolean toggle = true;
+        btnStop = new JButton("停止");
+        btnStart.setEnabled(true);
+        btnStop.setEnabled(false);
+
         btnStart.addActionListener(new ActionListener() {
+            @Override
             public void actionPerformed(ActionEvent arg0) {
-System.out.println("start rsServer.");
                 rsServer = RSServer.Initiate(Integer.parseInt(txtPort.getText()));
                 rsServer.addDataListener(listener);
                 try {
                     rsServer.start();
+                    logger.info("rsServer started.");
+                    btnStart.setEnabled(false);
+                    btnStop.setEnabled(true);
                 } catch (IOException e) {
                     e.printStackTrace();
                     logger.error(e);
@@ -94,11 +105,14 @@ System.out.println("start rsServer.");
                 }
             }
         });
-        btnStop = new JButton("停止");
+
         btnStop.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
                 try {
                     rsServer.stop();
+                    logger.info("rsServer stopped.");
+                    btnStart.setEnabled(true);
+                    btnStop.setEnabled(false);
                 } catch (IOException e) {
                     logger.error(e);
                     e.printStackTrace();

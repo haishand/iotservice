@@ -11,6 +11,7 @@ public class DBWorker extends Thread{
     public DBWorker() {
     }
 
+    @Override
     public void run() {
         while(isRunning) {
             DeviceInfo record = DBPool.instance().getQ().poll();
